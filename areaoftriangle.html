@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-    <title>fun with triangles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area of triangle</title>
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="nav-brand">FunWithTriangle</div> 
        <ul class="list-non-bullets nav-pills">
             <li class="list-item-inline">
-               <a class="link link-active" href="isTriangle.html">Is Triangle?</a>
+               <a class="link " href="isTriangle.html">Is Triangle?</a>
             </li>
             <li class="list-item-inline" >
                 <a class="link" href="quiz.html">Quiz</a>
@@ -21,27 +21,24 @@
                 <a class="link" href="hypotenuse.html">Hypotenuse</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="areaoftriangle.html">Triangle Area</a>
+                <a class="link link-active" href="areaoftriangle.html">Triangle Area</a>
 
             </li>
         </ul>
     </nav>
-    <h1>Angles of Triangles</h1>
+
+    <h1>Calculate Area of a triangle</h1>
     <div class="heading">
-        
-        <label for="angle1">Angle1</label>
-        <input type="number" class="input-angle"/>
-        <label for="angle2">Angle2</label>
-        <input type="number" class="input-angle">
-        <label for="angle3">Angle3</label>
-        <input type="number" class="input-angle">
-        <button id="is-triangle-button">Is Triangle?</button>
-        <h2 class="output"></h2>
-        
+        <h3>Formula for area of triangle is: 1/2(base*height) </h3>
+        <label>Length of Base: </label>
+        <input type="number" class="input-side"/>
+        <label>Length of Height: </label>
+        <input type="number" class="input-side"/>
+        <button id="area-button">Calculate Area</button>
+        <h2 id="output"></h2>
 
     </div>
-    
+    <script src="areaoftriangle.js"></script>
     
 </body>
-<script src="main.js"></script>
 </html>

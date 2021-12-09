@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypotenuse</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">FunWithTriangle</div> 
+       <ul class="list-non-bullets nav-pills">
+            <li class="list-item-inline">
+               <a class="link " href="isTriangle.html">Is Triangle?</a>
+            </li>
+            <li class="list-item-inline" >
+                <a class="link " href="quiz.html">Quiz</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="hypotenuse.html">Hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="areaoftriangle.html">Triangle Area</a>
+
+            </li>
+        </ul>
+    </nav>
+    <h1>Calculate Hypotenuse of a Triangle</h1>
+    <div class="heading">
+    <label for="base">Enter the base value:</label>
+    <input type="number" id="base"/>
+    <label for="height">Enter the height value:</label>
+    <input type="number" id="height"/>
+    <button id="hypotenuse-btn">Calculate Hypotenuse</button>
+    <h2>Hypotenuse formula
+        √(base² + height²)</h2>
+    <h2 id="output"></h2>
+    
+
+    </div>
+    <script src="hypo.js"></script>
+    
+</body>
+</html>
