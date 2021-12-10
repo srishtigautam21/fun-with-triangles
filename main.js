@@ -10,14 +10,23 @@ function calculateAngleSum(angle1,angle2,angle3)
 
 function isAngleTriangle()
 {
-    var sumOfAngle=calculateAngleSum(Number(inputAngle[0].value),Number(inputAngle[1].value),Number(inputAngle[2].value)); //how to select individual rows with query selectorall
-    if(sumOfAngle===180)
+    if(Number(inputAngle[0].value)<=0 || Number(inputAngle[1].value)<=0 || Number(inputAngle[2].value)<=0)
     {
-        outputE1.innerText="Yay the angles form a triangle";
+        outputE1.style.display="block";
+        outputE1.innerText="The angles should be greater than zero";
     }
     else{
-        outputE1.innerText="The angles do not form a triangle";
+        var sumOfAngle=calculateAngleSum(Number(inputAngle[0].value),Number(inputAngle[1].value),Number(inputAngle[2].value)); //how to select individual rows with query selectorall
+        if(sumOfAngle===180)
+        {
+            outputE1.innerText="Yay the angles form a triangle";
+        }
+        else{
+            outputE1.innerText="The angles do not form a triangle";
+        }
+
     }
+    
 }   
 
 btntriangle.addEventListener("click",isAngleTriangle);

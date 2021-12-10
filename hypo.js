@@ -7,14 +7,24 @@ function calculatesumofsquare(a,b)
 {
     var sumOfSquare=a*a+b*b;
     return sumOfSquare;
+    
 }
 
 function calculateHypotenuse()
 {
-    var sumofsquare=calculatesumofsquare(Number(base.value),Number(height.value));
+    if(Number(base.value)<=0 || Number(height.value)<=0)
+    {
+        output.style.display="block";
+        output.innerText="The length of sides should be greater than zero";
+    }
+    else{
+        var sumofsquare=calculatesumofsquare(Number(base.value),Number(height.value));
+        var hypotenuse=Math.sqrt(sumofsquare);
+        output.innerText="The length of hypotenuse is " + hypotenuse;
+
+    }
+
     
-    var hypotenuse=Math.sqrt(sumofsquare);
-    output.innerText="The length of hypotenuse is " + hypotenuse;
 }
 
 button.addEventListener("click",calculateHypotenuse);

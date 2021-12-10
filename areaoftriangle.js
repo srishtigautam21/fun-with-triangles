@@ -7,8 +7,17 @@ function calculateAreaOfTriangle()
 {
     var a= Number(sideInput[0].value);
     var b= Number(sideInput[1].value);
-    var area=0.5*(a*b);
-    output.innerText="The area of triangle is " + area;
+    if(a<=0 || b<=0)
+    {
+        output.style.display="block";
+        output.innerText="The length of sides should be greater than zero";
+    }
+    else{
+        var area=0.5*(a*b);
+        output.innerText="The area of triangle is " + area;
+
+    }
+    
 
 
 }
